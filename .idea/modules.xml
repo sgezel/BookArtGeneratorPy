@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BookArtGeneratorPy.iml" filepath="$PROJECT_DIR$/.idea/BookArtGeneratorPy.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/secretary-master/.idea/secretary-master.iml" filepath="$USER_HOME$/Downloads/secretary-master/.idea/secretary-master.iml" />
+    </modules>
+  </component>
+</project>

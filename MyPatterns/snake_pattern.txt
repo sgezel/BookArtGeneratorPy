@@ -1,0 +1,171 @@
+Book Folding Art Pattern for the Picture "snake"
+==============================================================================
+
+Instructions:
+
+These measurements describe where you will have to fold the pages of your book.
+All measurements are given in cm/inch, whichever you chose at the beginning.
+The first number indicates the page number, the second tells you where
+(measured from the top of the book) you have to fold the upper corner down,
+the third tells you where you will have to fold the lower corner up.
+
+  Page     Top Fold     Bottom Fold
+==========================================
+
+     1  No folds, or fold back completely.
+     3  No folds, or fold back completely.
+     5  No folds, or fold back completely.
+     7  No folds, or fold back completely.
+     9  No folds, or fold back completely.
+    11      10.60         10.93
+    13      10.80         10.88
+    15      11.38         11.51
+    17      11.09         11.17
+    19      11.86         11.99
+    21      11.38         11.51
+    23      12.20         12.29
+    25      11.67         11.75
+    27      12.49         12.58
+    29      11.86         11.95
+    31      12.68         12.77
+    33      11.96         12.04
+    35      12.83         12.91
+    37      12.05         12.14
+    39      12.92         13.01
+    41      12.15         12.24
+    43      13.02         13.11
+    45      12.20         12.29
+    47      13.12         13.20
+    49      12.25         12.33
+    51      13.17         13.25
+    53      12.25         12.33
+    55      13.17         13.25
+    57      12.25         12.33
+    59      13.17         13.25
+    61      12.20         12.29
+    63      13.17         13.20
+    65      12.10         12.19
+    67      13.07         13.16
+    69      12.00         12.09
+    71      12.97         13.06
+    73      11.81         11.90
+    75      12.83         12.91
+    77      11.47         11.61
+    79      12.68         12.77
+    81      10.89         11.12
+    83      12.44         12.53
+    85       8.62          9.38
+    87      12.05         12.19
+    89       7.80          7.98
+    91      11.47         11.66
+    93       7.36          7.50
+    95      10.75         11.03
+    97       7.02          7.16
+    99       8.71          9.04
+   101       6.83          6.91
+   103       8.04          8.17
+   105       6.63          6.72
+   107       7.75          7.88
+   109       6.44          6.53
+   111       7.55          7.64
+   113       6.34          6.43
+   115       7.41          7.50
+   117       6.30          6.38
+   119       7.36          7.45
+   121       6.30          6.38
+   123       7.26          7.35
+   125       6.30          6.38
+   127       7.26          7.35
+   129       6.34          6.43
+   131       7.31          7.40
+   133       6.39          6.48
+   135       7.36          7.45
+   137       6.49          6.58
+   139       7.36          7.45
+   141       6.54          6.58
+   143       7.41          7.50
+   145       6.54          6.62
+   147       7.46          7.54
+   149       6.59          6.67
+   151       7.55          7.64
+   153       6.59          6.67
+   155       7.60          7.64
+   157       6.54          6.62
+   159       7.55          7.64
+   161       6.44          6.53
+   163       7.51          7.59
+   165       6.25          6.33
+   167       7.41          7.50
+   169       5.96          6.09
+   171       7.26          7.35
+   173       5.38          5.56
+   175       7.12          7.20
+   177       4.65          4.88
+   179       6.78          6.91
+   181       3.83          4.06
+   183       6.20          6.43
+   185       3.10          3.33
+   187       5.28          5.51
+   189       2.42          2.61
+   191       4.55          4.79
+   193       2.04          2.17
+   195       3.78          4.01
+   197       1.75          1.88
+   199       3.25          3.43
+   201       1.50          1.59
+   203       3.01          3.09
+   205       1.31          1.40
+   207       2.71          2.85
+   209       1.21          1.25
+   211       2.52          2.61
+   213       1.07          1.16
+   215       2.38          2.46
+   217       0.97          1.06
+   219       2.28          2.37
+   221       0.97          1.06
+   223       2.28          2.37
+   225       1.02          1.11
+   227       2.38          2.46
+   229       1.12          1.20
+   231       2.52          2.61
+   233       1.21          1.30
+   235       2.76          2.90
+   237       1.36          1.45
+   239       3.15          3.38
+   241       1.65          1.74
+   243       4.36          4.64
+   245       1.99          2.12
+   247       4.99          5.08
+   249       2.38          2.51
+   251       5.28          5.41
+   253       2.71          2.80
+   255       4.60          5.03
+   257       5.62          5.70
+   259       3.01          3.09
+   261       3.05          3.14
+   263       5.76          5.85
+   265       3.15          3.24
+   267       5.81          5.85
+   269       5.81          5.90
+   271       6.05          6.19
+   273       3.44          3.53
+   275       6.34          6.43
+   277       3.83          4.01
+   279       4.21          5.12
+   281  No folds, or fold back completely.
+   283  No folds, or fold back completely.
+   285  No folds, or fold back completely.
+   287  No folds, or fold back completely.
+   289  No folds, or fold back completely.
+   291  No folds, or fold back completely.
+   293  No folds, or fold back completely.
+   295  No folds, or fold back completely.
+   297  No folds, or fold back completely.
+
+
+
+This pattern was created using the program BookArtGenerator (Python Port).
+The program is licenced under the GPLv3.
+
+------------  HAVE FUN FOLDING :-)  ------------ !
+

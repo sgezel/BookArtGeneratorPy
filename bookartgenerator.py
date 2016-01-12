@@ -48,6 +48,7 @@ If you make a beautiful object of art, please don't hesitate to send me a pictur
 
 from PIL import Image as Pimage
 import os
+from secretary import Renderer
 
 # Choose True, if you want single precision in pattern output, e.g. 2.1 or 5.8.
 # This setting does not affect the preview, so expect your result to 
@@ -58,6 +59,9 @@ import os
 # for more info.
 # Choose False for default, double digit precision, e.g. 2.24 or 5.77.
 SINGLE_PRECISION = False
+
+class Fold(object):
+    pass
 
 class Book(object):
     """Represents the book the user wants to use. 
@@ -184,6 +188,8 @@ class MyImage(object):
         self.create_pattern_text(first)
         
         self.create_previews()
+
+        self.create_odt(first,file_name)
         
 
     def create_raw_pattern(self):
@@ -321,8 +327,45 @@ class MyImage(object):
 
 
         return final_pattern
-    
+
+    def create_odt(self, first, filename):
+        print("creating odt")
+        odt_path = os.path.join(os.path.relpath("MyPatterns"), self.file_base + "_pattern.odt")
+
+        foldsArr = []
+        for column in range(0, self.temp.size[0]):
+
+            # add first page to get the correct page number, double for sheets instead of pages
+            pagenum = column * 2 + first
+            if column in self.final_pattern:
+                # make the number a float with double precision, like 10.15
+                upper_corner = self.final_pattern[column][0]/100.0
+                lower_corner = self.final_pattern[column][1]/100.0
+
+                if SINGLE_PRECISION == True:
+                    upper_corner = ('%.1f' % round(upper_corner, 1)).rjust(7)
+                    lower_corner = ('%.1f' % round(lower_corner, 1)).rjust(7)
+                else:
+                    upper_corner = ('%.2f' % upper_corner).rjust(6)
+                    lower_corner = ('%.2f' % lower_corner).rjust(6)
+
+                foldsArr.append({"pagenum": str(pagenum).rjust(6), "top": upper_corner, "bottom": lower_corner})
+            #else:
+                #foldsArr.append({"pagenum": "4", "top": "", "bottom": ""})
+
+        engine = Renderer(media_path='.')
+        template = open('template.odt', 'rb')
+        output = open(odt_path, 'wb')
+        output.write(engine.render(template,
+                                   TITLE=self.file_base,
+                                   image=os.path.join(os.path.relpath("MyPatterns"), self.file_base + "_sheets.png"),
+                                   image_orig=os.path.join(os.path.relpath("MyPictures"), filename),
+                                   folds=foldsArr
+                                   )
+                     )
+
     def create_pattern_text(self, first):
+
         """Creates a pattern text file for printing"""
         textfile_path = os.path.join(os.path.relpath("MyPatterns"), self.file_base + "_pattern.txt")
         try:
